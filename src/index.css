@@ -1,0 +1,641 @@
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+/* =========================================
+   COLOR SYSTEM
+   ========================================= */
+
+:root {
+  --black: #080a09;
+  --black-soft: #101311;
+  --white: #f2f4f2;
+  --gray: #929992;
+  --gray-dark: #303530;
+  --green: #7cff6b;
+  --green-dark: #3fa83b;
+}
+
+
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--black);
+  color: var(--white);
+
+  font-family: "JetBrains Mono", monospace;
+
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 6%;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background-color: rgba(8, 10, 9, 0.9);
+
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid var(--gray-dark);
+}
+
+nav h2 {
+  margin: 0;
+
+  color: var(--green);
+
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+nav div {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: var(--gray);
+
+  font-size: 0.9rem;
+
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--green);
+
+  text-shadow:
+    0 0 8px rgba(124, 255, 107, 0.5);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  min-height: calc(100vh - 75px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 10%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1000px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Small terminal text */
+
+.terminal-line {
+  color: var(--green);
+
+  font-size: 1rem;
+
+  margin-bottom: 30px;
+
+  min-height: 1.6em;
+}
+
+
+/* Main name */
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 8vw, 7rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+}
+
+
+
+/* Subtitle */
+
+.hero h2 {
+
+  margin-top: 35px;
+
+  color: var(--gray);
+
+  font-size: clamp(1rem, 2vw, 1.4rem);
+
+  font-weight: 400;
+}
+
+.hero h3 {
+  margin-top: 15px;
+
+  color: var(--gray);
+
+  font-size: clamp(1rem,2vw, 1.4rem);
+
+  font-weight: 400;
+}
+
+
+/* Location */
+
+.location {
+  color: var(--white);
+
+  margin-top: 10px;
+}
+
+
+/* Status */
+
+.status {
+  color: var(--green);
+
+  margin-top: 35px;
+}
+
+
+/* Blinking cursor */
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* =========================================
+   HERO BUTTONS
+   ========================================= */
+
+.hero-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 45px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+
+  padding: 14px 24px;
+
+  border: 1px solid var(--green);
+
+  color: var(--white);
+
+  font-size: 0.85rem;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-buttons a:first-child {
+  background-color: var(--green);
+
+  color: var(--black);
+}
+
+.hero-buttons a:hover {
+  background-color: var(--green);
+
+  color: var(--black);
+
+  box-shadow:
+    0 0 20px rgba(124, 255, 107, 0.25);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+section:not(.hero) {
+  min-height: 80vh;
+
+  padding: 120px 10%;
+
+  border-top: 1px solid var(--gray-dark);
+}
+
+section:not(.hero) h2 {
+  color: var(--green);
+
+  font-size: 2rem;
+
+  margin-bottom: 40px;
+}
+
+section:not(.hero) p {
+  max-width: 700px;
+
+  color: var(--gray);
+
+  font-size: 1rem;
+}
+
+
+/* =========================================
+   PROJECTS
+   ========================================= */
+
+#projects div {
+  border: 1px solid var(--gray-dark);
+
+  padding: 30px;
+
+  max-width: 800px;
+
+  background-color: var(--black-soft);
+
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+#projects div:hover {
+  border-color: var(--green);
+
+  transform: translateY(-5px);
+}
+
+#projects h3 {
+  color: var(--white);
+
+  margin-top: 0;
+}
+
+
+/* =========================================
+   RESUME
+   ========================================= */
+
+#resume button {
+  margin-top: 20px;
+
+  padding: 14px 24px;
+
+  border: 1px solid var(--green);
+
+  background-color: transparent;
+
+  color: var(--green);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+#resume button:hover {
+  background-color: var(--green);
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+#contact a {
+  display: inline-block;
+
+  margin-top: 0px;
+
+  color: var(--gray);
+
+  border-bottom: 1px solid var(--gray-dark);
+
+  padding-bottom: 4px;
+
+  gap: 10px;
+
+  .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 35px;
+}
+}
+
+.social-links a {
+  display: inline-block;
+
+  padding: 14px 24px;
+
+  border: 1px solid var(--gray-dark);
+
+  background-color: var(--black-soft);
+
+  color: var(--gray);
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+.social-links a:hover {
+  color: var(--green);
+
+  border-color: var(--green);
+
+  background-color: rgba(124, 255, 107, 0.05);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 15px rgba(124, 255, 107, 0.12);
+}
+
+
+
+
+
+/* =========================================
+   CIRCUIT BACKGROUND
+   ========================================= */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -150px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 49%,
+      rgba(124, 255, 107, 0.08) 50%,
+      transparent 51%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 49%,
+      rgba(124, 255, 107, 0.08) 50%,
+      transparent 51%
+    );
+
+  background-size: 50px 50px;
+
+  border-radius: 50%;
+
+  opacity: 0.5;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  nav {
+    padding: 18px 5%;
+  }
+
+  nav div {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+  }
+
+  .hero {
+    padding: 70px 7%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 15vw, 5rem);
+
+    letter-spacing: -2px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  section:not(.hero) {
+    padding: 90px 7%;
+  }
+
+}
+
+/* =========================================
+   SOCIAL LINKS
+   ========================================= */
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.social-links-button a {
+  display: inline-block;
+
+  padding: 14px 24px;
+
+  border: 1px solid var(--gray-dark);
+
+  background-color: var(--black-soft);
+
+  color: var(--gray);
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--green);
+
+  border-color: var(--green);
+
+  background-color: rgba(124, 255, 107, 0.05);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 15px rgba(124, 255, 107, 0.12);
+}
+.mobile-menu-button{
+  display: none;
+}
+
+.desktop-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 700px){
+  .mobile-menu-button{
+    display: block; 
+  }
+  .desktop-menu{
+    display: none;
+  }
+}
+
+.mobile-menu{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+ 
+
+/* bottom flourish animation */
+
+
+#contact .connection-status{
+  color: var(--green);
+  margin-top: 20px;
+}
+
+footer {
+margin-top: 10px;
+padding: 20px 6%;
+border-top: 2px solid var(--gray-dark);
+color: var(--gray);
+h1{
+  color: var(--green-dark);
+}
+h2{
+  color: var(--green-dark);
+}
+}
+
+.about-button{
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.user-profile{
+  margin-top: 35px;
+  padding: 30px;
+  border: 1px solid var(--gray-dark);
+  background-color: var(--black-soft);
+  h3{
+    color: var(--green-dark);
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+.user-profile p {
+  line-height: 1.8;
+}
+
+.profile-label {
+  display: inline-block;
+  width: 50px;
+  color: var(--green-dark);
+}
+
+.personal-projects {
+  margin-top: 50px;
+  h3{
+    color: var(--green-dark);
+    margin-bottom: 20px;
+  }
+}
+
+.project-preview {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--gray-dark);
+  background-color: var(--black-soft);
+}
