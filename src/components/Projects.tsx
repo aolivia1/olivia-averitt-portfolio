@@ -4,7 +4,7 @@ function Projects() {
       <h2>Projects</h2>
 
       <a href="/olivia-averitt-portfolio/projects/assembly-project" 
-      className="project">
+      className="project-box">
         <h3>ECE 2544 — CPU / Assembly Project</h3>
 
         <p>
@@ -14,7 +14,8 @@ function Projects() {
         <span>VIEW PROJECT →</span>
       </a>
 
-      <a href="/olivia-averitt-portfolio/projects/digital-sign"  className="project">
+      <a href="/olivia-averitt-portfolio/projects/digital-sign"  
+      className="project-box">
         <h3>ECE 2544 - Digital Sign & Seven-Segment Display</h3>
 
         <p>
@@ -24,7 +25,8 @@ function Projects() {
         <span>VIEW PROJECT →</span>
       </a>
 
-      <a href="/olivia-averitt-portfolio/projects/branch-control"  className="project">
+      <a href="/olivia-averitt-portfolio/projects/branch-control"  
+      className="project-box">
         <h3>ECE 2544 - Simple Computer / Branch Control</h3>
 
         <p>

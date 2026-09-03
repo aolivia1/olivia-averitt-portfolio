@@ -12,17 +12,19 @@ import BranchControl from "./components/Projects/branch-control";
 
 
 function App() {
-  const path = window.location.pathname;
+const params = new URLSearchParams(window.location.search);
+const project = params.get("project");
 
-  if (path === "/olivia-averitt-portfolio/projects/assembly-project") {
+
+  if (project === "assembly-project") {
     return <AssemblyProject />;
   }
 
-  if (path === "/olivia-averitt-portfolio/projects/digital-sign") {
+  if (project === "digital-sign") {
     return <DigitalSign />
   }
 
-  if (path === "/olivia-averitt-portfolio/projects/branch-control") {
+  if (project === "branch-control") {
     return <BranchControl />
   }
 
