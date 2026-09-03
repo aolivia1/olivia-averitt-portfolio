@@ -24,7 +24,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
           >
-            LINKED IN
+            LINKEDIN
         </a>
 
         <a 

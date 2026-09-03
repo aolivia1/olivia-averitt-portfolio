@@ -38,25 +38,25 @@ function About() {
 
       <div className="project-preview">
         <p>
-          <strong>[01]</strong> COMPUTER FROM SCRATCH <br />
+          <h3><strong>[01]</strong> COMPUTER FROM SCRATCH <br /></h3>
           <a>Build a basic computer from the ground up using Verilog.</a> <br/></p>
       </div>
 
       <div className="project-preview">
         <p>
-          <strong>[02]</strong> SMART DISPLAY MIRROR <br />
+          <h3><strong>[02]</strong> SMART DISPLAY MIRROR <br /></h3>
           <a>Build an interactive display behind a two-way mirror.</a> <br />
         </p>
       </div>
 
       <div className="project-preview">
         <p>
-          <strong>[03]</strong> CYBER DECK <br />
+          <h3><strong>[03]</strong> CYBER DECK <br /></h3>
           <a>Build a portable, customized computer with a Raspberry Pi for music and coding projects.</a>
         </p>
       </div>
        
-       
+
       <a href="#footer" className="about-button">
         VIEW SYSTEM INFO
       </a>

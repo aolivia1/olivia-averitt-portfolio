@@ -3,16 +3,43 @@ function Projects() {
     <section id="projects">
       <h2>Projects</h2>
 
-      <div>
+      <a href="/olivia-averitt-portfolio/projects/assembly-project" 
+      className="project">
         <h3>ECE 2544 — CPU / Assembly Project</h3>
 
         <p>
-          Digital logic, assembly programming, CPU architecture,
-          and computer engineering.
+          Digital logic, Assembly Programming, CPU Architecture,
+          and Computer Engineering.
         </p>
-      </div>
+        <span>VIEW PROJECT →</span>
+      </a>
+
+      <a href="/olivia-averitt-portfolio/projects/digital-sign"  className="project">
+        <h3>ECE 2544 - Digital Sign & Seven-Segment Display</h3>
+
+        <p>
+          Digital Systems, FPGA Design, Logic Design, and 
+          Hardware/Software Integration
+        </p>
+        <span>VIEW PROJECT →</span>
+      </a>
+
+      <a href="/olivia-averitt-portfolio/projects/branch-control"  className="project">
+        <h3>ECE 2544 - Simple Computer / Branch Control</h3>
+
+        <p>
+          Digital Systems, Computer Architecture, FPGA Design, and
+          Processor Control Logic
+        </p>
+        <span>VIEW PROJECT →</span>
+      </a>
     </section>
   );
 }
 
 export default Projects;
+
+//Assembly Project (LE G)
+//Scrolling Display (LE B & E)
+//Simple Computer (LE F)
+//More to come button
