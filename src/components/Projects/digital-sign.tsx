@@ -6,101 +6,79 @@ function DigitalSign() {
             <section>
                 <h3>OVERVIEW</h3>
                 <p>
-                    Designed and implemented an assembly program for a 
-                    simple computer system to process a series of financial 
-                    transactions and calculate a final account balance.
+                    Designed and implemented a digital display system using 
+                    combinational logic and FPGA hardware. The project focused on
+                    developing custom seven-segment display decoders and using 
+                    digital logic to control displayed characters.
                 </p>
 
-                <p> 
-                    This project required working directly with memory, 
-                    registers, pointers, arithmetic operations, branching, 
-                    and bitwise operations.
-                </p>
             </section>
             
             <section>
                 <h3>&gt; PROJECT REQUIREMENTS</h3>
                 <p>
-                    The program processes deposits, withdrawals, interest,
-                    and point-of-sale transactions while maintaining the 
-                    account balance.
+                    Developed a custom character set and corresponding binary
+                    representations for display output. 
                 </p>
 
                 <p>
-                    The program also performs a series of required bitwise
-                    and data-manipulation operations, including masking, 
-                    circular shifting, logical shifting, concentation, and
-                    finding maximum and minimum values.
+                    Designed the required logic for converting binary input values 
+                    into seven-segment display patterns and implemented the resulting
+                    combinational circuits.
                 </p>
             </section>
 
             <section>
                 <h3>&gt; IMPLEMENTATION</h3>
                 <p>
-                   Implemented an assembly program that accesses transaction 
-                   data from memory, processes each transaction, updates the
-                   account balance, and stores required results in designated 
-                   memory locations. 
+                   Designed truth tables and simplified Boolean logic to determine 
+                   the required output for each segment of the display.
                 </p>
 
                 <p>
-                    A pointer was used to sequentially access the transaction 
-                    array, while conditional branching controlled program flow
-                    based on transaction type and program conditions.
+                    Implemented and simulated the resulting circuit in Quartus 
+                    before programming the design onto a DE 10-Lite board to verifying 
+                    that the hardware output matched the simulated design.
                 </p>
             </section>
 
             <section>
-                <h3>&gt; MEMORY MANAGEMENT</h3>
+                <h3>&gt; HARDWARE</h3>
                 <p>
-                    Transaction data was stored beginning at memory location 0x20.
-                    The program utilized designated memory locations for required 
-                    outputs, including the student ID and final account balance, and
-                    used load/store operations to transfer data between memory and
-                    registers.
-                </p>
-            </section>
-
-            <section>
-                <h3>&gt; DEBUGGING & TESTING</h3>
-                <p>
-                    Tested program functionality using multiple transaction 
-                    sequences and monitored register and memoru values 
-                    throughout execution.
+                    Configured the FPGA's seven-segment displays to represent the 
+                    required character sequences.
                 </p>
 
                 <p>
-                    Debugging focused on verifying arithmetic calculations, 
-                    memory addressing, pointer operations, branching behavior,
-                    and final output values.
+                    Tested the physical implementation on the DE 10-Lite board to verifying 
+                    that the hardware output matched the simulated design.
                 </p>
             </section>
 
             <section>
                 <h3>&gt; TECHNICAL SKILLS</h3>
                 <p>
-                    Assembly • CPU Architecture • Registers • Memory Addressing 
-                    • Pointers • Branching • Bitwise Operations • Logical & 
-                    Circular Shifts • Debugging 
+                    Verilog • Combinational Logic • Truth Tables • Boolean Logic
+                    • Karnaugh Maps • Sevn-Segment Displays • FPGA Design • Quartus Prime 
+                    • DE 10-Lite 
                 </p>
             </section>
 
             <section>
                 <h3>&gt; ENGINEERING FOCUS</h3>
                 <p>
-                    Computer Architecture • Low-Level Programming • Digital 
-                    Systems • Embedded Systems
+                    Digital Systems • FPGA Design • Combinational 
+                    Circuit Design • Hardware Implementation
                 </p>
             </section>
 
             <section>
                 <h3>&gt; WHAT I LEARNED</h3>
                 <p>
-                    Developed a deeper understanding of low-level programming 
-                    and the relationship between software instructions, 
-                    processor architecture, registers, and memory. The project
-                    strengthened my ability to implement and debug programs within
-                    a defined instruction set and hardware architecture.
+                    Developed a stronger understanding of how Boolean logic and combinational 
+                    circuits can be translated into functional hardware. This project 
+                    strengthened my ability to move from a logical design and truth table to a 
+                    simulated circuit and ultimately a working FPGA implementation.
                 </p>
             </section>
 

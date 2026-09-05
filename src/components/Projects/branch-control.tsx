@@ -6,101 +6,94 @@ function BranchControl() {
             <section>
                 <h3>OVERVIEW</h3>
                 <p>
-                    Designed and implemented an assembly program for a 
-                    simple computer system to process a series of financial 
-                    transactions and calculate a final account balance.
+                    Expanded a single-cycle Simple Computer CPU by implementing 
+                    conditional branch control using Verilog.
                 </p>
 
                 <p> 
-                    This project required working directly with memory, 
-                    registers, pointers, arithmetic operations, branching, 
-                    and bitwise operations.
+                    The project focused on modifying the processor's control logic 
+                    to allow the Program Counter to change based on the result of a 
+                    specified condition.
                 </p>
             </section>
             
             <section>
                 <h3>&gt; PROJECT REQUIREMENTS</h3>
                 <p>
-                    The program processes deposits, withdrawals, interest,
-                    and point-of-sale transactions while maintaining the 
-                    account balance.
+                    Implemented the BRNN - Branch on Not Negative instruction while 
+                    maintaining the functionality of the existing Simple Computer 
+                    instruction set.
                 </p>
 
                 <p>
-                    The program also performs a series of required bitwise
-                    and data-manipulation operations, including masking, 
-                    circular shifting, logical shifting, concentation, and
-                    finding maximum and minimum values.
+                    The branch operation required the processor to evaluate the 
+                    negative status of a register and determine whether execution 
+                    should continue sequentially or branch to a new program 
+                    location.
                 </p>
             </section>
 
             <section>
                 <h3>&gt; IMPLEMENTATION</h3>
                 <p>
-                   Implemented an assembly program that accesses transaction 
-                   data from memory, processes each transaction, updates the
-                   account balance, and stores required results in designated 
-                   memory locations. 
+                   Modified the Program Counter control logic to support conditional 
+                   branching in addition to normal instruction sequencing and jump 
+                   operations.
                 </p>
 
                 <p>
-                    A pointer was used to sequentially access the transaction 
-                    array, while conditional branching controlled program flow
-                    based on transaction type and program conditions.
-                </p>
-            </section>
-
-            <section>
-                <h3>&gt; MEMORY MANAGEMENT</h3>
-                <p>
-                    Transaction data was stored beginning at memory location 0x20.
-                    The program utilized designated memory locations for required 
-                    outputs, including the student ID and final account balance, and
-                    used load/store operations to transfer data between memory and
-                    registers.
+                    Implemented the required instruction decoding and control signals 
+                    to determine when a branch should occur and calculate the resulting 
+                    program address using the branch offset.
                 </p>
             </section>
 
             <section>
-                <h3>&gt; DEBUGGING & TESTING</h3>
+                <h3>&gt; HARDWARE</h3>
                 <p>
-                    Tested program functionality using multiple transaction 
-                    sequences and monitored register and memoru values 
-                    throughout execution.
+                    Implemented and tested the completed processor design on the DE 10-Lite 
+                    FPGA development board to verify that the branch-control functionality 
+                    operated correctly in hardware.
+                </p>
+            </section>
+
+            <section>
+                <h3>&gt; VERIFICATION</h3>
+                <p>
+                    Developed test cases to verify branch behavior using different register 
+                    values and branch offsets.
                 </p>
 
                 <p>
-                    Debugging focused on verifying arithmetic calculations, 
-                    memory addressing, pointer operations, branching behavior,
-                    and final output values.
+                    Simulated the processor in Quartus and examined waveform outputs to verify 
+                    correct Program Counter behavior and instruction execution.
                 </p>
             </section>
 
             <section>
                 <h3>&gt; TECHNICAL SKILLS</h3>
                 <p>
-                    Assembly • CPU Architecture • Registers • Memory Addressing 
-                    • Pointers • Branching • Bitwise Operations • Logical & 
-                    Circular Shifts • Debugging 
+                    Veriloh • CPU Architecture • Control Unit Design • Program Counter Logic 
+                    • Instruction Decoding • Branch Instructions • Two's Complement • Quartus Prime 
+                    • FPGA Implementation 
                 </p>
             </section>
 
             <section>
                 <h3>&gt; ENGINEERING FOCUS</h3>
                 <p>
-                    Computer Architecture • Low-Level Programming • Digital 
-                    Systems • Embedded Systems
+                    Computer Architecture • Processor Design • Digital 
+                    Systems • FPGA Design • Control Logic
                 </p>
             </section>
 
             <section>
                 <h3>&gt; WHAT I LEARNED</h3>
                 <p>
-                    Developed a deeper understanding of low-level programming 
-                    and the relationship between software instructions, 
-                    processor architecture, registers, and memory. The project
-                    strengthened my ability to implement and debug programs within
-                    a defined instruction set and hardware architecture.
+                    Developed a deeper understanding of how processor control logic affects program 
+                    execution. This project strengthened my understanding of the relationship between 
+                    instruction decoding, the Program Counter, conditional branching, and the hardware 
+                    required to control processor behavior.
                 </p>
             </section>
 

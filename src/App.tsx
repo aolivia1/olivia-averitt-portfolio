@@ -17,15 +17,15 @@ const project = params.get("project");
 
 
   if (project === "assembly-project") {
-    return <AssemblyProject />;
+    return (<AssemblyProject />);
   }
 
   if (project === "digital-sign") {
-    return <DigitalSign />
+    return (<DigitalSign />);
   }
 
   if (project === "branch-control") {
-    return <BranchControl />
+    return (<BranchControl />);
   }
 
   return (
@@ -37,9 +37,6 @@ const project = params.get("project");
       <Resume />
       <Contact />
       <Footer />
-      <AssemblyProject />
-      <DigitalSign />
-      <BranchControl />
     </>
   );
 }
