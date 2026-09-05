@@ -36,7 +36,7 @@ function Contact() {
         </a>
 
         <a
-        href="/document/resume.pdf"
+        href="/olivia-averitt-portfolio/documents/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         >

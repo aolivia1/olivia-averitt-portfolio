@@ -7,9 +7,11 @@ function Resume() {
         Download my current resume.
       </p>
 
+    <a href="/olivia-averitt-portfolio/documents/resume.pdf" download>
       <button>
         DOWNLOAD_RESUME
       </button>
+      </a>
     </section>
   );
 }
