@@ -26,6 +26,8 @@ function About() {
           Crochet <br />
         </p>
       </div>
+      
+      <br />
 
       <div className="personal-projects">
         <h3>&gt; PERSONAL_PROJECTS</h3>

@@ -274,9 +274,9 @@ nav a:hover {
    ========================================= */
 
 section:not(.hero) {
-  min-height: 80vh;
+  min-height: 0vh;
 
-  padding: 120px 10%;
+  padding: 30px 10%;
 
   border-top: 1px solid var(--gray-dark);
 }
@@ -651,3 +651,66 @@ h3{
     display: inline-block;
   }
 }
+
+/* Individual Project Pages */
+
+.project-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 30px 80px;
+}
+
+.project-page h1 {
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.project-page h2 {
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.project-page h3 {
+  color: var(--green);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.project-page p {
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-page section {
+  border: 1px solid var(--gray-dark);
+  background-color: var(--black-soft);
+  padding: 20px 25px;
+  margin-bottom: 0px;
+}
+
+.project-page a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  border: 1px solid var(--gray-dark);
+  background-color: var(--black-soft);
+  color: var(--green);
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-page a:hover {
+  color: var(--white);
+  border-color: var(--green);
+  transform: translateY(-3px);
+}
+
+.project-page section{
+  min-height: 0;
+}
+

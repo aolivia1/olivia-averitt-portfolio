@@ -25,7 +25,7 @@ function Projects() {
         <span>VIEW PROJECT →</span>
       </a>
 
-      <a href="/olivia-averitt-portfolio/?projects=branch-control"  
+      <a href="/olivia-averitt-portfolio/?project=branch-control"  
       className="project-box">
         <h3>ECE 2544 - Simple Computer / Branch Control</h3>
 
